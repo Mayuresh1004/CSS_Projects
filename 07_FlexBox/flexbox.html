@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Masterclass</title>
+
+    <style>
+        .default{
+            border: 5px solid black;
+            height: 100px;
+            margin: 20px;
+            padding: 10px;
+            display: flex;
+        }
+        .Flex_direction{
+            border: 5px solid black;
+            height: auto;
+            margin: 20px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .Justify_content{
+            border: 5px solid black;
+            height: auto;
+            margin: 20px;
+            padding: 10px;
+            display: flex;
+            justify-content: stretch;
+        }
+
+        .Align_items{
+            border: 5px solid black;
+            height: 100px;
+            margin: 20px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .Flex_Wrap{
+            width: 300px;
+            border: 5px solid black;
+            height: auto;
+            margin: 20px;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .Align_content{
+            border: 5px solid black;
+            height: auto;
+            width: 400px;
+            margin: 20px;
+            padding: 10px;
+            display: flex;
+            
+        }
+        .Flex_grow{
+            border: 5px solid black;
+            height: 100px;
+            margin: 20px;
+            padding: 10px;
+            display: flex;
+            flex-grow: 5;
+        }
+        .pastel-1{
+            width: 15px;
+            height: 40px;
+            background-color: aqua;
+            font-size: 30px;
+            padding: 5px 15px;
+            margin: 10px;
+        }
+        .pastel-2{
+
+            height: 40px;
+            width: 15px;
+            background-color: chartreuse;
+            font-size: 30px;
+            padding: 5px 15px;
+            margin: 10px;
+            display: flex;
+        }
+        .pastel-3{
+            height: 40px;
+            width: 15px;
+            background-color: gold;
+            font-size: 30px;
+            padding: 5px 15px;
+            margin: 10px;
+        }
+        .pastel-4{
+            height: 40px;
+            width: 15px;
+            background-color: limegreen;
+            font-size: 30px;
+            padding: 5px 15px;
+            margin: 10px;
+        }
+        .pastel-5{
+            height: 40px;
+            width: 15px;
+            background-color: pink;
+            font-size: 30px;
+            padding: 5px 15px;
+            margin: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+        <h1>Default Flex:</h1>
+        <div class="default">
+            <div class="pastel-1">1</div>
+            <div class="pastel-2">2</div>
+            <div class="pastel-3">3</div>
+            <div class="pastel-4">4</div>
+            <div class="pastel-5">5</div>
+        </div>
+
+    <h1>Flex_direction:</h1>
+    <div class="Flex_direction">
+        
+            <div class="pastel-1">1</div>
+            <div class="pastel-2">2</div>
+            <div class="pastel-3">3</div>
+            <div class="pastel-4">4</div>
+            <div class="pastel-5">5</div>
+        
+    </div>
+    <h1>Justify_content:</h1>
+    <div class="Justify_content">
+        <div class="pastel-1">1</div>
+            <div class="pastel-2">2</div>
+            <div class="pastel-3">3</div>
+            <div class="pastel-4">4</div>
+            <div class="pastel-5">5</div>
+    </div>
+    <h1>Align_items:</h1>
+    <div class="Align_items">
+        <div class="pastel-1">1</div>
+            <div class="pastel-2">2</div>
+            <div class="pastel-3">3</div>
+            <div class="pastel-4">4</div>
+            <div class="pastel-5">5</div>
+    </div>
+    <h1>Flex_Wrap:</h1>
+    <div class="Flex_Wrap">
+        <div class="pastel-1">1</div>
+            <div class="pastel-2">2</div>
+            <div class="pastel-3">3</div>
+            <div class="pastel-4">4</div>
+            <div class="pastel-5">5</div>
+            <div class="pastel-1">6</div>
+            <div class="pastel-2">7</div>
+            <div class="pastel-3">8</div>
+            <div class="pastel-4">9</div>
+            <div class="pastel-5">10</div>
+    </div>
+    <h1>Align_content:</h1>
+    <div class="Align_content" style="flex-wrap: wrap;
+    align-content:center;">
+        
+            <div class="pastel-1" >1</div>
+            <div class="pastel-2">2</div>
+            <div class="pastel-3">3</div>
+            <div class="pastel-4">4</div>
+            <div class="pastel-5">5</div>
+            <div class="pastel-1">6</div>
+            <div class="pastel-2">7</div>
+            <div class="pastel-3">8</div>
+            <div class="pastel-4">9</div>
+            <div class="pastel-5">10</div>
+    </div>
+    <h1>Order Property:</h1>
+    <div class="default">
+        <div class="square" style="order: 5;">
+            <div class="pastel-1" >1</div></div>
+            <div class="pastel-2">2</div>
+            <div class="pastel-3">3</div>
+            <div class="pastel-4">4</div>
+            <div class="pastel-5">5</div>
+        
+    </div>
+    <h1>Flex Grow:</h1>
+    <div class="Flex_grow">
+        <div class="pastel-1" style="flex-grow: 0;">1</div>
+        <div class="pastel-2" style="flex-grow: 7;">2</div>
+        <div class="pastel-3" style="flex-grow: 1;">3</div>
+        <div class="pastel-4" style="flex-grow: 1;">4</div>
+        <div class="pastel-5" style="flex-grow: 1;">5</div>
+    </div>
+    <h1>Align-self:</h1>
+    <div class="default">
+        
+            <div class="pastel-1" style="align-self: flex-end;">1</div>
+            <div class="pastel-2" style="align-self: stretch;height: auto">2</div>
+            <div class="pastel-3" style="align-self: center;">3</div>
+            <div class="pastel-4" style="align-self: self-start;">4</div>
+            <div class="pastel-5">5</div>
+        
+    </div>
+</body>
+</html>

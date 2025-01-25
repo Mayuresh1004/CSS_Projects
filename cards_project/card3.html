@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 3</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            border: black;
+            background-color: aqua;
+            display: grid;
+            justify-self: center;
+            border-radius: 10px;
+            box-shadow: 10px 5px 5px rgb(121, 118, 118);
+            background: linear-gradient(135deg,rgb(242, 1, 255),rgb(255, 0, 234) );
+        }
+        .Product-img{
+            border-radius: 10px;
+        }
+        video{
+            pointer-events: none;
+        }
+        .Product-img:hover video{
+            animation: play-video 0s forwards;
+            
+        }
+        h2{
+            color: aliceblue;
+            padding: 20px;
+            margin-bottom: 0;
+        }
+        button{
+            color: black;
+            justify-self: center;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="grid-area: 'vid' 'content' 'butt';">
+        <div class="Product-img" style="grid-template-areas: vid; justify-self: center;"><video src="../Images/Samba_OG_Shoes_White_IG1024_video.webm" loop controls style="width: 360px;"></video></div>
+        <div class="content" style="grid-template-areas: content;">
+            <h2 style="text-decoration: underline;">Adidas Newly Launched Shoes!</h1>
+            <h2>Rs.5999/-</h2>
+        </div>
+        <div class="buttons" style="grid-template-areas: butt; justify-self: center; grid-row: 3/4;">
+            <button>Order Now</button>
+            <button>Add To Cart</button>
+        </div>
+    </div>
+</body>
+</html>
